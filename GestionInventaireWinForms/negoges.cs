@@ -265,7 +265,7 @@ namespace GestionInventaireWinForms
         //Bouton reload
         private void button_LoadArticle_Click(object sender, EventArgs e)
         {
-            appel_Api("http://localhost:/api/Article");
+            appel_Api("http://localhost:44319/api/Article");
             this.dataGridView_Article.Columns["IsActive"].Visible = false;
         }
 
@@ -332,7 +332,7 @@ namespace GestionInventaireWinForms
                 requestStream.Write(byteArray, 0, byteArray.Length);
             }
             MessageBox.Show("Vous avez suppprimé " + lastNameClient);
-            appel_Api("http://localhost:58841/api/Clients");
+            appel_Api("http://localhost:44319/api/Clients");
         }
 
         private void btn_DeleteFournisseur_Click(object sender, EventArgs e)
