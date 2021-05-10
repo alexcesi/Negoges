@@ -276,12 +276,17 @@ namespace GestionInventaireWinForms
 
         private void btn_addFournisseur_Click(object sender, EventArgs e)
         {
-            this.btn_addFournisseur.Show();
+            this.AjoutFournisseur.Show();
         }
 
         private void btn_LoadCommandeInterne_Click(object sender, EventArgs e)
         {
             appel_Api("http://localhost:44319/api/CommandeInterne");
+        }
+
+        private void button_AddArticle_Click(object sender, EventArgs e)
+        {
+            this.AjoutArticle.Show();
         }
 
         private void btn_LoadCategorie_Click(object sender, EventArgs e)

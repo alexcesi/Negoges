@@ -183,6 +183,7 @@ namespace GestionInventaireWinForms
             this.button_AddArticle.Size = new System.Drawing.Size(62, 61);
             this.button_AddArticle.TabIndex = 7;
             this.button_AddArticle.UseVisualStyleBackColor = false;
+            this.button_AddArticle.Click += new System.EventHandler(this.button_AddArticle_Click);
             // 
             // comboBox_categorie
             // 
