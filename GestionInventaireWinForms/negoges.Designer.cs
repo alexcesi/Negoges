@@ -46,7 +46,7 @@ namespace GestionInventaireWinForms
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btn_DeleteFournisseur = new System.Windows.Forms.Button();
             this.btn_EditFournisseur = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btn_addFournisseur = new System.Windows.Forms.Button();
             this.btn_LoadFournisseur = new System.Windows.Forms.Button();
             this.dataGridView_Fournisseur = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
@@ -251,7 +251,7 @@ namespace GestionInventaireWinForms
             // 
             this.tabPage2.Controls.Add(this.btn_DeleteFournisseur);
             this.tabPage2.Controls.Add(this.btn_EditFournisseur);
-            this.tabPage2.Controls.Add(this.button7);
+            this.tabPage2.Controls.Add(this.btn_addFournisseur);
             this.tabPage2.Controls.Add(this.btn_LoadFournisseur);
             this.tabPage2.Controls.Add(this.dataGridView_Fournisseur);
             this.tabPage2.Controls.Add(this.label4);
@@ -287,17 +287,18 @@ namespace GestionInventaireWinForms
             this.btn_EditFournisseur.UseVisualStyleBackColor = false;
             this.btn_EditFournisseur.Click += new System.EventHandler(this.btn_EditFournisseur_Click);
             // 
-            // button7
+            // btn_addFournisseur
             // 
-            this.button7.BackColor = System.Drawing.Color.White;
-            this.button7.BackgroundImage = global::GestionInventaireWinForms.Properties.Resources.add;
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button7.Location = new System.Drawing.Point(1041, 124);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(62, 61);
-            this.button7.TabIndex = 10;
-            this.button7.UseVisualStyleBackColor = false;
+            this.btn_addFournisseur.BackColor = System.Drawing.Color.White;
+            this.btn_addFournisseur.BackgroundImage = global::GestionInventaireWinForms.Properties.Resources.add;
+            this.btn_addFournisseur.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_addFournisseur.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_addFournisseur.Location = new System.Drawing.Point(1041, 124);
+            this.btn_addFournisseur.Name = "btn_addFournisseur";
+            this.btn_addFournisseur.Size = new System.Drawing.Size(62, 61);
+            this.btn_addFournisseur.TabIndex = 10;
+            this.btn_addFournisseur.UseVisualStyleBackColor = false;
+            this.btn_addFournisseur.Click += new System.EventHandler(this.btn_addFournisseur_Click);
             // 
             // btn_LoadFournisseur
             // 
@@ -678,7 +679,7 @@ namespace GestionInventaireWinForms
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.Button btn_DeleteFournisseur;
         private System.Windows.Forms.Button btn_EditFournisseur;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btn_addFournisseur;
         private System.Windows.Forms.Button btn_LoadFournisseur;
         private System.Windows.Forms.DataGridView dataGridView_Fournisseur;
         private System.Windows.Forms.Label label4;

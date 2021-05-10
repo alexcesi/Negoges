@@ -33,7 +33,7 @@ namespace GestionInventaireWinForms
         string oldStatus;
         string idCommandeFournisseur, prixTotalCommande, dateCommandeEdit, statutCommande;
         private string idClient, firstNameClient, lastNameClient, EmailClient, AdresseClient, TelClient;
-        string idFournisseur, nomFournisseur, nomContact, adresseFournisseur, telFournisseur, mailFournisseur;
+        string idFournisseur, nomFournisseur, adresseFournisseur, telFournisseur, mailFournisseur;
         string idStock, quantiteStockCommande, quantiteStock, idArticleStock;
 
 
@@ -57,10 +57,10 @@ namespace GestionInventaireWinForms
             this.dataGridView_Article.Columns["IsActive"].Visible = false;
             appel_Api("http://localhost:44319/api/User");
             this.dataGridView_Client.Columns["IsActive"].Visible = false;
-            appel_Api("http://localhost:44319/api/Familles");
+            appel_Api("http://localhost:44319/api/Categorie");
             this.dataGridView_Categorie.Columns["IsActive"].Visible = false;
-            appel_Api("http://localhost:44319/api/CommandeInternes");
-            appel_Api("http://localhost:44319/api/Stocks");
+            appel_Api("http://localhost:44319/api/CommandeInterne");
+            appel_Api("http://localhost:44319/api/Stock");
             this.dataGridView_Commande.Columns["IsActive"].Visible = false;
 
 
@@ -274,6 +274,11 @@ namespace GestionInventaireWinForms
             this.appel_Api("http://localhost:44319/api/Provider");
         }
 
+        private void btn_addFournisseur_Click(object sender, EventArgs e)
+        {
+            this.btn_addFournisseur.Show();
+        }
+
         private void btn_LoadCommandeInterne_Click(object sender, EventArgs e)
         {
             appel_Api("http://localhost:44319/api/CommandeInterne");
@@ -340,7 +345,6 @@ namespace GestionInventaireWinForms
 
                 idFournisseur = Convert.ToString(selectedRow.Cells["Id"].Value);
                 nomFournisseur = Convert.ToString(selectedRow.Cells["nomEntreprise"].Value);
-                nomContact = Convert.ToString(selectedRow.Cells["nomContact"].Value);
                 adresseFournisseur = Convert.ToString(selectedRow.Cells["adresse"].Value);
                 mailFournisseur = Convert.ToString(selectedRow.Cells["Mail"].Value);
                 telFournisseur = Convert.ToString(selectedRow.Cells["tel"].Value);
@@ -481,7 +485,6 @@ namespace GestionInventaireWinForms
 
                 idFournisseur = Convert.ToString(selectedRow.Cells["Id"].Value);
                 nomFournisseur = Convert.ToString(selectedRow.Cells["Nom Entreprise"].Value);
-                nomContact = Convert.ToString(selectedRow.Cells["Nom Contact"].Value);
                 adresseFournisseur = Convert.ToString(selectedRow.Cells["Adresse"].Value);
                 mailFournisseur = Convert.ToString(selectedRow.Cells["Mail"].Value);
                 telFournisseur = Convert.ToString(selectedRow.Cells["Tel"].Value);
