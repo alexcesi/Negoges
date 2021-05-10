@@ -607,7 +607,7 @@ namespace GestionInventaireWinForms
                     {
                         reader = new StreamReader(webResponse.GetResponseStream());
                         s = reader.ReadToEnd();
-                        var arrProduitCommande = JsonConvert.DeserializeObject<List<CommandeInterneProduitDTO>>(s);
+                        var arrProduitCommande = JsonConvert.DeserializeObject<List<CommandeInterneArticleDTO>>(s);
 
                         var allCommandeInterneProduitsId = from r in arrProduitCommande
                                                            orderby r.idCommandeInterne

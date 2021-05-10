@@ -181,7 +181,7 @@
     <Compile Include="CategorieDTO.cs" />
     <Compile Include="ClientDTO.cs" />
     <Compile Include="CommandeInterneDTO.cs" />
-    <Compile Include="CommandeInterneProduitDTO.cs" />
+    <Compile Include="CommandeInterneArticleDTO.cs" />
     <Compile Include="negoges.cs">
       <SubType>Form</SubType>
     </Compile>

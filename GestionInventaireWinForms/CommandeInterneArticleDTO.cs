@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GestionInventaireWinForms
 {
-    class CommandeInterneProduitDTO
+    class CommandeInterneArticleDTO
     {
         public long idCommandeInterne { get; set; }
         public long idArticle { get; set; }
@@ -17,6 +17,6 @@ namespace GestionInventaireWinForms
 
     class Datalist_Commande_Interne_Produit
     {
-        public List<CommandeInterneProduitDTO> ListcommandeInterneProduit { get; set; }
+        public List<CommandeInterneArticleDTO> ListcommandeInterneProduit { get; set; }
     }
 }

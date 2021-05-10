@@ -28,9 +28,9 @@ namespace NetAPI.Data
 
         public DbSet<NetAPI.Models.CommandeInterne> CommandeInterne { get; set; }
 
-        public DbSet<NetAPI.Models.CommandeInterneProduit> CommandeInterneProduit { get; set; }
+        public DbSet<NetAPI.Models.CommandeInterneArticle> CommandeInterneArticle { get; set; }
 
-        public DbSet<NetAPI.Models.OrderArticle> CommandeProduit { get; set; }
+        public DbSet<NetAPI.Models.OrderArticle> CommandeArticle { get; set; }
 
         public DbSet<NetAPI.Models.ProviderArticle> ProduitFournisseur { get; set; }
     }

@@ -209,7 +209,7 @@ namespace GestionInventaireWinForms
         {
             JavaScriptSerializer ser = new JavaScriptSerializer();
 
-            var jsonData = new CommandeInterneProduitDTO()
+            var jsonData = new CommandeInterneArticleDTO()
             {
 
                 idCommandeInterne = i,

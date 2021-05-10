@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace NetAPI.Models
 {
-    public class CommandeInterneProduit
+    public class CommandeInterneArticle
     {
         public long Id { get; set; }
         public int IdCommandeInterne { get; set; }
